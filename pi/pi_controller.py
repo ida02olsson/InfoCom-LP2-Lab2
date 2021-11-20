@@ -2,6 +2,8 @@ import requests
 import time
 import random
 import click
+from sense_hat import SenseHat
+sense = SenseHat()
 
 
 # Replace with your own function in Part 1
