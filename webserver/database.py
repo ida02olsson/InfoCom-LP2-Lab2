@@ -8,7 +8,7 @@ app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 
 # change this to connect to your redis server
 # ===============================================
-redis_server = redis.Redis(host='127.0.0.1', port=6379)
+redis_server = redis.Redis(host='localhost', port=6379)
 # ===============================================
 
 redis_server.set('longitude', 13.21008)
@@ -28,7 +28,7 @@ def moveDrone(d_long, d_la):
     
     redis_server.set('longitude', longitude)
     redis_server.set('latitude', latitude)
-    pass
+  #  pass
 # ===============================================
 
 @app.route('/drone', methods=['POST'])
