@@ -28,6 +28,8 @@ def moveDrone(d_long, d_la):
     
     redis_server.set('longitude', longitude)
     redis_server.set('latitude', latitude)
+    #redis_server.set('longitude', longitude + d_long)
+    #redis_server.set('latitude', latitude + d_la)
   #  pass
 # ===============================================
 
